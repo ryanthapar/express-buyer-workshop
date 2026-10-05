@@ -84,6 +84,9 @@ p{margin:0 0 1em}
 .card .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
 .card p{margin:0;color:var(--ink)}
 
+.obj{max-width:720px;margin:28px auto 0;padding:0;list-style:none;counter-reset:o;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.obj li{counter-increment:o;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px 14px 52px;position:relative;font-weight:600;color:var(--navy);line-height:1.4}
+.obj li::before{content:counter(o);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-size:.85rem;font-weight:800;display:flex;align-items:center;justify-content:center}
 /* schedule */
 .sched{display:grid;gap:16px;margin-top:28px}
 .slot{display:grid;grid-template-columns:150px 1fr;gap:18px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
@@ -145,7 +148,7 @@ footer{padding:28px 0 96px}
 @media (max-width:700px){
   body{font-size:16px}
   section{padding:44px 0}
-  .two{grid-template-columns:1fr}
+  .two,.obj{grid-template-columns:1fr}
   .slot{grid-template-columns:1fr;gap:8px}
   .quote{grid-template-columns:72px 1fr;gap:14px;padding:18px}
   .quote img{width:72px;height:72px}
@@ -227,10 +230,31 @@ footer{padding:28px 0 96px}
       <div class="card"><span class="n">2</span><h3>Scripts</h3><p>Use word-for-word responses to "I want to look at homes first" and the other lines that stall buyers.</p></div>
       <div class="card"><span class="n">3</span><h3>Roleplay</h3><p>Practise real buyer scenarios live, so the words come naturally when it counts.</p></div>
       <div class="card"><span class="n">4</span><h3>Personality types</h3><p>Spot how each buyer likes to communicate and adjust your approach on the call.</p></div>
-      <div class="card"><span class="n">5</span><h3>Objections</h3><p>Handle all 10 common objections, including Realtor.ca and "I'll get a better deal with the listing agent."</p></div>
+      <div class="card"><span class="n">5</span><h3>Objections</h3><p>Handle the 10 objections that stall buyers, from "I can find everything online" to "I'll get a better deal with the listing agent."</p></div>
       <div class="card"><span class="n">6</span><h3>Presentation</h3><p>Walk a buyer through the Buyer Representation Agreement with confidence and earn their commitment.</p></div>
     </div>
     <p class="center" style="margin-top:28px"><strong>Plus:</strong> the right questions to ask before you even meet the buyer, and Monica's 4 Steps to Signing a Buyer.</p>
+  </div>
+</section>
+
+<!-- OBJECTIONS -->
+<section>
+  <div class="wrap">
+    <h2>The 10 objections you'll learn to handle</h2>
+    <p class="center narrow">The things buyers say that stall a signed agreement. You'll get a clear, word-for-word response to each one.</p>
+    <ol class="obj">
+      <li>&ldquo;I can find all the homes online. Why do I need an agent?&rdquo;</li>
+      <li>&ldquo;I want to work directly with the listing agent.&rdquo;</li>
+      <li>&ldquo;I just go to open houses.&rdquo;</li>
+      <li>&ldquo;I just look for for-sale signs and call the listing agent.&rdquo;</li>
+      <li>&ldquo;I use online search platforms like Realtor.ca.&rdquo;</li>
+      <li>&ldquo;I'll get a better deal if I go with the listing agent.&rdquo;</li>
+      <!-- Items 7-10 are suggested additions; confirm or swap with the real list. -->
+      <li>&ldquo;I don't want to sign anything.&rdquo;</li>
+      <li>&ldquo;I want to look at homes first.&rdquo;</li>
+      <li>&ldquo;I'm not ready to buy yet. I'm just looking.&rdquo;</li>
+      <li>&ldquo;I need to talk to my partner or family first.&rdquo;</li>
+    </ol>
   </div>
 </section>
 
