@@ -120,15 +120,6 @@ summary::after{content:"+";position:absolute;right:0;top:50%;transform:translate
 details[open] summary::after{content:"\2212"}
 details p{padding-bottom:6px;color:var(--ink)}
 
-/* testimonials */
-.quotes{display:grid;gap:22px;margin-top:30px}
-.quote{display:grid;grid-template-columns:104px 1fr;gap:22px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.quote img{width:104px;height:104px;border-radius:50%;object-fit:cover;background:#cfe3f1}
-.quote blockquote{margin:0}
-.quote blockquote p{margin:0 0 .8em}
-.quote cite{font-style:normal;font-weight:700;color:var(--green);font-size:.95rem;display:block;line-height:1.4}
-.quote cite span{color:var(--muted);font-weight:600;display:block}
-
 /* final cta */
 .final{background:var(--navy-dark);color:#fff;text-align:center}
 .final h2{color:#fff}
@@ -150,8 +141,6 @@ footer{padding:28px 0 96px}
   section{padding:44px 0}
   .two,.obj{grid-template-columns:1fr}
   .slot{grid-template-columns:1fr;gap:8px}
-  .quote{grid-template-columns:72px 1fr;gap:14px;padding:18px}
-  .quote img{width:72px;height:72px}
   .host{flex-direction:column;text-align:center}
   .event-card{display:block}
   .btn-primary{width:100%}
@@ -325,45 +314,8 @@ footer{padding:28px 0 96px}
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="tint">
-  <div class="wrap">
-    <h2>What agents say about training with Monica</h2>
-    <div class="quotes">
-      <div class="quote">
-        <img src="images/parveen-arora.jpg" alt="Parveen Arora" width="104" height="104" loading="lazy">
-        <blockquote>
-          <p>&ldquo;<strong>Monica Thapar is a master coach.</strong> Her newest coaching program &lsquo;Let's Farm with Monica Thapar&rsquo; provides agents with <strong>a roadmap to success in the real estate business</strong>. Her insights, warmth and resources make this a class you need in your tool belt. <strong>She has helped my business grow to the next level and I am grateful.</strong>&rdquo;</p>
-          <cite>Parveen Arora, #1 Agent in Brampton <span>RE/MAX Real Estate Centre Team Arora Realty</span></cite>
-        </blockquote>
-      </div>
-      <div class="quote">
-        <img src="images/kristine-vavrinec.png" alt="Kristine Vavrinec" width="104" height="104" loading="lazy">
-        <blockquote>
-          <p>&ldquo;Monica's experience and knowledge has <strong>transformed my business</strong> and has brought me to new heights. <strong>I am a 3 time platinum agent earning over 500,000 in GCI.</strong> I cannot thank Monica &amp; Ricardo enough.&rdquo;</p>
-          <cite>Kristine Vavrinec <span>EXP Realty</span></cite>
-        </blockquote>
-      </div>
-      <div class="quote">
-        <img src="images/david-soberano.jpg" alt="David Soberano" width="104" height="104" loading="lazy">
-        <blockquote>
-          <p>&ldquo;I was at her course about a month and a half ago. I really really enjoyed it. I got a lot out of it. I want to repeat it, <strong>best money you can spend.</strong>&rdquo;</p>
-          <cite>David Soberano, #1 Agent in Bathurst Manor <span>RE/MAX Realtron David Soberano Group</span></cite>
-        </blockquote>
-      </div>
-      <div class="quote">
-        <img src="images/renee-proulx.png" alt="Renee Proulx" width="104" height="104" loading="lazy">
-        <blockquote>
-          <p>&ldquo;<strong>I made $1mil in the last two years</strong> (the team made way more!) with huge thanks to your door knocking/farming classes and coaching!&rdquo;</p>
-          <cite>Renee Proulx <span>Remax West</span></cite>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- LOGISTICS + FAQ -->
-<section id="faq">
+<section class="tint" id="faq">
   <div class="wrap narrow">
     <h2>Details and common questions</h2>
     <div class="facts" style="max-width:none">
@@ -419,7 +371,7 @@ footer{padding:28px 0 96px}
 
 <footer>
   <div class="wrap">
-    <p class="fine">Monica Thapar is the #1 Realtor in all of Etobicoke as per RE Stats, an independent research company, from 2019 to September 2026. Etobicoke is defined as South of Steeles, North of Lakeshore, West of 427 and East of Humber River. The "over 1,000 buyers" figure counts buyers signed by Monica's team and her students combined. Testimonials reflect individual experiences and results will vary.</p>
+    <p class="fine">Monica Thapar is the #1 Realtor in all of Etobicoke as per RE Stats, an independent research company, from 2019 to September 2026. Etobicoke is defined as South of Steeles, North of Lakeshore, West of 427 and East of Humber River. The "over 1,000 buyers" figure counts buyers signed by Monica's team and her students combined.</p>
   </div>
 </footer>
 
